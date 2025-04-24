@@ -380,5 +380,30 @@ $('.commit-variable').on('click', function () {
   });
 });
 
+// Function to unlink repository
+const unlinkRepo = () => {
+  /* Reset mode type to hook, stats to null */
+  api.storage.local.set(
+    { mode_type: 'hook', gititdone_hook: null, sync_stats: true, stats: null },
+    () => {
+      console.log(`Unlinked repo`);
+      console.log('Cleared local stats');
+    }
+  );
+};
+
+// Add click handler for unlink text
+$('#unlink').on('click', function(e) {
+  e.preventDefault();
+  unlinkRepo();
+  $('#repo_url').text('');
+  $('#commit_mode').hide();
+  $('#hook_mode').show();
+  $('#success').text('Repository unlinked successfully').show();
+  setTimeout(() => {
+    $('#success').hide();
+  }, 3000);
+});
+
 /******/ })()
 ;

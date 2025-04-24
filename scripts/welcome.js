@@ -485,6 +485,17 @@ $('#type').on('change', async function() {
   }
 });
 
+// Add input handler for the name field
+$('#name').on('input', function() {
+  const type = $('#type').val();
+  const name = $(this).val();
+  if (type === 'new' && name) {
+    $('#hook_button').prop('disabled', false);
+  } else {
+    $('#hook_button').prop('disabled', true);
+  }
+});
+
 // Add change handler for repository selection
 $('#repo-select').on('change', function() {
   const repoName = $(this).val();

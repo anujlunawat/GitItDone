@@ -144,11 +144,34 @@ body.dark-theme {
   font-weight: 600;
 }
 
+.repo-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
 .repo-url {
+  margin: 0;
   color: var(--text-color);
-  font-size: 0.8rem;
-  margin: 0 0 1rem 0;
+  font-size: 14px;
   word-break: break-all;
+}
+
+.unlink-text {
+  color: var(--text-color);
+  text-decoration: underline;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.unlink-text:hover {
+  color: #da3633;
 }
 
 .reset-button {
@@ -228,10 +251,11 @@ body.dark-theme {
 .social-icon {
   color: #8b949e;
   transition: color 0.2s;
+  text-decoration: none;
 }
 
 .social-icon:hover {
-  color: var(--text-color);
+  color: #58a6ff;
 }
 
 .collapsible-icon {
@@ -348,4 +372,22 @@ body.dark-theme {
 /* Additional styles to ensure proper centering */
 .ui.toggle.checkbox input ~ label:before {
   margin: 0 auto;
+}
+
+.footer {
+  margin-top: 0rem;
+  padding-top: 0.5rem;
+  color: #58a6ff;
+  text-align: center;
+}
+
+.footer a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #58a6ff;
 }

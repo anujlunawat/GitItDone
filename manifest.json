@@ -24,8 +24,7 @@
     "webNavigation",
     "scripting"
   ],
-  "host_permissions": [],
-  "web_accessible_resources": [],
+
   "content_scripts": [
     {
       "matches": [
