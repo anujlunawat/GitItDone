@@ -1,6 +1,6 @@
 # Privacy Policy for GitItDone
 
-Last Updated: [Current Date]
+Last Updated: 25-04-2025
 
 ## Introduction
 GitItDone is a Chrome extension that helps users automatically commit their LeetCode solutions to GitHub. This privacy policy explains how we collect, use, and protect your data.
@@ -75,8 +75,8 @@ GitItDone is a Chrome extension that helps users automatically commit their Leet
 ## Contact Information
 
 ### How to Reach Us
-- GitHub Issues: [Your GitHub Issues Page]
-- Email: [Your Contact Email]
+- GitHub Issues: https://github.com/anujlunawat/GitItDone/issues
+- Email: anujjain0805@gmail.com
 
 ### Reporting Issues
 - Security concerns
